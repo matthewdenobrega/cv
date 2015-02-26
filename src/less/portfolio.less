@@ -1,0 +1,34 @@
+.portfolio-item {
+  width: 0;
+
+  .relative {
+    display: none;
+  }
+}
+
+.portfolio-item-visible.capitec .portfolio-item.capitec,
+.portfolio-item-visible.klipdrift .portfolio-item.klipdrift,
+.portfolio-item-visible.askwhy .portfolio-item.askwhy,
+.portfolio-item-visible.other .portfolio-item.other {
+  background-color: white;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  padding: 0 2% 2% 2%;
+
+  .relative {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio-item-visible.capitec .portfolio-item.capitec,
+  .portfolio-item-visible.klipdrift .portfolio-item.klipdrift,
+  .portfolio-item-visible.askwhy .portfolio-item.askwhy,
+  .portfolio-item-visible.other .portfolio-item.other {
+    width: 650px;
+    margin-left: -325px;
+  }
+}

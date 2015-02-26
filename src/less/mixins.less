@@ -1,0 +1,45 @@
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+
+.perspective(@amount) {
+  -webkit-perspective: @amount;
+  -moz-perspective: @amount;
+  -ms-perspective: @amount;
+  -o-perspective: @amount;
+  perspective: @amount;
+}
+
+.transform (@transform) {
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+  -ms-transform: @transform;
+  -o-transform: @transform;
+}
+
+.transition (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+}
+
+.transition2 (@transition1, @transition2) {
+  -webkit-transition: @transition1, transition2;
+  -moz-transition: @transition1, transition2;
+  -ms-transition: @transition1, transition2;
+  -o-transition: @transition1, transition2;
+}
+
+.transform-transition(@transition) {
+  -webkit-transition: -webkit-transform @transition;
+  -moz-transition: -moz-transform @transition;
+  -ms-transition: -ms-transform @transition;
+  -o-transition: transform @transition;
+}

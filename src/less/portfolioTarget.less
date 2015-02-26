@@ -1,0 +1,80 @@
+.portfolio-hover-target {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  text-align: center;
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0.8) 35%, rgba(255, 255, 255, 1));
+
+  h3 {
+    .transition(opacity @fast-transition-period);
+  }
+
+  .portfolio-icon {
+    display: inline-block;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    .transition(top @fast-transition-period ease-in-out);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.capitec {
+      margin-left: -140px;
+    }
+
+    &.klipdrift {
+      margin-left: -70px;
+    }
+
+    &.askwhy {
+      margin-left: 10px;
+
+      img {
+        margin-top: 20%;
+        height: 60%;
+        width: 60%;
+      }
+    }
+
+    &.other {
+      margin-left: 120px;
+    }
+  }
+
+  &:hover {
+    h3 {
+      opacity: 0.1;
+    }
+
+    .portfolio-icon {
+      top: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio-hover-target {
+    .portfolio-icon {
+      &.capitec {
+        margin-left: -210px;
+      }
+
+      &.klipdrift {
+        margin-left: -105px;
+      }
+
+      &.askwhy {
+        margin-left: 35px;
+      }
+    }
+  }
+}
